@@ -41,11 +41,12 @@ def extract_columns(data_source):
         lambda x: x.split(';')[0][2:] if isinstance(x, str) else 0)
     dataframe['injury'] = dataframe['死亡受傷人數'].map(
         lambda x: x.split(';')[1][2:] if isinstance(x, str) else 0)
+    dataframe.rename(columns={u'發生時間':'time'}, inplace=True)
     dataframe.rename(columns={u'經度':'lng'}, inplace=True)
     dataframe.rename(columns={u'緯度':'lat'}, inplace=True)
     dataframe = dataframe[pd.notnull(dataframe['lng'])]
     dataframe = dataframe[pd.notnull(dataframe['lat'])]
-    return dataframe[['lat', 'lng', 'death', 'injury']]
+    return dataframe[['lat', 'lng', 'death', 'injury', 'time']]
 
 
 def main():

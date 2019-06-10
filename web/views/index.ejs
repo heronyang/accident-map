@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accident Map</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <style>
+#map {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script src="js/accident-map.js"></script>
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=<%= gmap_api_key %>&libraries=visualization&callback=map_loaded_handler">
+        </script>
+    </body>
+</html>
