@@ -75,6 +75,11 @@ function load_data_into_memory(callback) {
 
 // Entry point for starting the server.
 function main() {
-    load_data_into_memory(start_server);
+    // If traffic accident csv is not set, skipped it.
+    if (traffic_accident_csv != null) {
+        load_data_into_memory(start_server);
+    } else {
+        start_server();
+    }
 }
 main();

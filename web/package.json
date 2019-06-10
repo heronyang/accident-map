@@ -4,7 +4,7 @@
   "description": "Web frontend for accident map",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
