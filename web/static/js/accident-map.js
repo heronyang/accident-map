@@ -7,7 +7,7 @@ function map_loaded_handler() {
     console.log("Map is loaded");
     load_accident_data(function() {
         plot_map();
-        plot_markers();
+        // plot_markers();
     });
 }
 
@@ -17,6 +17,20 @@ function plot_map() {
         center: taiwan,
         zoom: 8
     });
+    // Adds traffic layer
+    var trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
+    // Adds heatmap layer
+    var layer = new google.maps.FusionTablesLayer({
+        query: {
+            select: "location",
+            from: "1EzVx_dMXBPe_aIzie3AguMW0Wpl_fwEa4Aed9Nfr"
+        },
+        heatmap: {
+            enabled: true
+        }
+    });
+    layer.setMap(map);
 }
 
 function plot_markers() {
@@ -28,7 +42,6 @@ function plot_markers() {
             title: acc[2],
             icon: "http://maps.gstatic.com/mapfiles/ridefinder-images/mm_20_red.png"
         });
-        console.log(acc[2]);
     }
 }
 
