@@ -13,10 +13,25 @@ html, body {
     margin: 0;
     padding: 0;
 }
+#legend {
+    background: rgba(255, 255, 255, .3);
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #aaa;
+    width: 220px;
+}
+#legend h3 {
+    margin-top: 0;
+    text-align: center;
+}
+#legend p {
+    margin-bottom: 0;
+}
         </style>
     </head>
     <body>
         <div id="map"></div>
+        <div id="legend"><h3>Taiwan Accident Map 2018</h3><p>This heatmap shows the accidents happened in 2018. Check out which places are more dangerous in your neighbor or on the way to your commute!</p></div>
         <script src="js/accident-map.js"></script>
         <script type="text/javascript"
                 src="https://maps.googleapis.com/maps/api/js?key=<%= gmap_api_key %>&libraries=visualization&callback=map_loaded_handler">

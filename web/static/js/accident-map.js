@@ -8,6 +8,7 @@ function map_loaded_handler() {
     load_accident_data(function() {
         plot_map();
         plot_markers();
+        plot_legend();
     });
 }
 
@@ -40,6 +41,11 @@ function plot_markers() {
             icon: "https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0"
         });
     }
+}
+
+function plot_legend() {
+    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(
+      document.getElementById("legend"));
 }
 
 function load_accident_data(callback) {
