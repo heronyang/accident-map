@@ -8,7 +8,13 @@ A map that shows accident histories.
 
 Heatmap of accidents happened in Taiwan in 2018.
 
-![](doc/screenshot.png?cache=1)
+Taiwan
+
+![](doc/screenshot-taiwan.png)
+
+Taipei
+
+![](doc/screenshot-taipei.png)
 
 ## Development
 
