@@ -10,11 +10,11 @@ Heatmap of accidents happened in Taiwan in 2018.
 
 Taiwan
 
-![](doc/screenshot-taiwan.png)
+![](doc/screenshot-taiwan.png?cache=1)
 
 Taipei
 
-![](doc/screenshot-taipei.png)
+![](doc/screenshot-taipei.png?cache=1)
 
 ## Development
 
