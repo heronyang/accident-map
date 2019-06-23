@@ -2,6 +2,10 @@
 
 A map that shows accident histories.
 
-Demo: Each point represents one death in traffic accident happened in Taiwan in 2018.
+## Demo
+
+[https://accident-map.herokuapp.com](https://accident-map.herokuapp.com)
+
+Heatmap of accidents happened in Taiwan in 2018.
 
 ![](doc/screenshot.png?cache=1)
