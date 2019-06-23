@@ -4,15 +4,15 @@ A map that shows accident histories.
 
 ## Demo
 
+Heatmap of accidents happened in Taiwan in 2018: 
+
 [https://accident-map.herokuapp.com](https://accident-map.herokuapp.com)
 
-Heatmap of accidents happened in Taiwan in 2018.
-
-Taiwan
+### Taiwan
 
 ![](doc/screenshot-taiwan.png?cache=1)
 
-Taipei
+### Taipei
 
 ![](doc/screenshot-taipei.png?cache=1)
 
